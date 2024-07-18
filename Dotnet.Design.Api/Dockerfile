@@ -9,17 +9,17 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["dotnet_design.csproj", "."]
-RUN dotnet restore "./dotnet_design.csproj"
+COPY ["Dotnet.Design.Api/Dotnet.Design.Api.csproj", "Dotnet.Design.Api/"]
+RUN dotnet restore "./Dotnet.Design.Api/Dotnet.Design.Api.csproj"
 COPY . .
-WORKDIR "/src/."
-RUN dotnet build "./dotnet_design.csproj" -c $BUILD_CONFIGURATION -o /app/build
+WORKDIR "/src/Dotnet.Design.Api"
+RUN dotnet build "./Dotnet.Design.Api.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./dotnet_design.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./Dotnet.Design.Api.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "dotnet_design.dll"]
+ENTRYPOINT ["dotnet", "Dotnet.Design.Api.dll"]

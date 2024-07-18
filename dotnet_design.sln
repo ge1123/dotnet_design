@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dotnet.Design.Job", "Dotnet.Design.Job\Dotnet.Design.Job.csproj", "{D876AB1F-B711-4E91-96D3-FEDA51FB57AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnet.Design.Api", "Dotnet.Design.Api\Dotnet.Design.Api.csproj", "{E7B6248D-7D33-47CE-93C6-2E285EA2B1ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D876AB1F-B711-4E91-96D3-FEDA51FB57AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D876AB1F-B711-4E91-96D3-FEDA51FB57AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D876AB1F-B711-4E91-96D3-FEDA51FB57AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D876AB1F-B711-4E91-96D3-FEDA51FB57AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7B6248D-7D33-47CE-93C6-2E285EA2B1ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7B6248D-7D33-47CE-93C6-2E285EA2B1ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7B6248D-7D33-47CE-93C6-2E285EA2B1ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7B6248D-7D33-47CE-93C6-2E285EA2B1ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4F60F126-CCD8-4E45-B5CD-5E7F87CF74E2}
+	EndGlobalSection
+EndGlobal

@@ -15,4 +15,8 @@
 
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Dotnet.Design.Application\Dotnet.Design.Application.csproj" />
+  </ItemGroup>
+
 </Project>

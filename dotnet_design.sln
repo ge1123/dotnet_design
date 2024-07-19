@@ -12,6 +12,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnet.Design.Domain", "Dotnet.Design.Domain\Dotnet.Design.Domain.csproj", "{C563268D-9493-4DBB-8D2A-5F69247E98EE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnet.Design.Infrastructure", "Dotnet.Design.Infrastructure\Dotnet.Design.Infrastructure.csproj", "{62ED0ABB-768F-4190-A48E-36DE3734E716}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C563268D-9493-4DBB-8D2A-5F69247E98EE} = {C563268D-9493-4DBB-8D2A-5F69247E98EE}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
